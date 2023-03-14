@@ -109,3 +109,5 @@ downloadImg(captchaBase64, filename)
 ListCookies = driver.get_cookies()  # type = list
 print('印出cookies: ')
 print(ListCookies)
+with open('./ImageCookies.txt', 'w') as f:
+    f.write(str(ListCookies))
