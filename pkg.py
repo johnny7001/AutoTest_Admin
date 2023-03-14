@@ -93,22 +93,21 @@ def getCaptcha(filepath):
 # 下載圖片
 
 
+# 下載圖片
 def downloadImg(captchaBase64, filename):
     try:
         # 先將 data Url 前綴 (data:image/png;base64) 去除，再將 base64 資料轉為 bytes
         i = base64.b64decode(captchaBase64.split(',')[1])
         i = io.BytesIO(i)
         i = mpimg.imread(i, format='PNG')  # 讀檔會失敗
-        print('array:'+i)
         # # 顯示驗證碼
-        # plt.imshow(i)
+        plt.imshow(i)
         # 不顯示xy軸及邊框
         plt.axis('off')
         # plt.show()
-        plt.savefig(filename)
+        plt.savefig(f"./{filename}")
         print(f'{filename}圖片下載')
     except Exception as err:
-        print(f'圖片讀檔失敗, 錯誤訊息: {err}')
         logging.info(f'圖片讀檔失敗, 錯誤訊息: {err}')
 
 # 用js處理base64
@@ -128,7 +127,7 @@ def catchBase64(driver):
             callback = arguments[arguments.length - 1];
             callback(canvas.toDataURL());
             """)
-        print("處理js圖片")
+        print(f'產生Base64: {captchaBase64}')
         return captchaBase64
     except Exception as err:
         logging.info(f'catchBase64失敗, 錯誤訊息: {err}')

@@ -64,7 +64,7 @@ jobs:
 
       - name: Running the Python script
 #        run: python autoTest_NoSemicolon.py
-        run: python downloadImage.py
+        run: python autoTest_NoSemicolon.py
 
       - name: Commit and Push The Results From Python Selenium Action
         run: |
