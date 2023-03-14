@@ -73,3 +73,6 @@ jobs:
           git add -A
           git commit -m "update"
           git push
+
+      - name: Read cookies
+        run: python readCookieImage.py
