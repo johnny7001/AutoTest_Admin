@@ -17,7 +17,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import chromedriver_autoinstaller
 from pyvirtualdisplay import Display
-display = Display(visible=0, size=(1200, 1200))
+display = Display(visible=0, size=(800, 800))
 display.start()
 # load_dotenv()
 # Account = os.getenv("Account")
@@ -116,7 +116,7 @@ AuthNO="53538851"
 def AdminLogin(driver):
     driver.get('https://vendor-stage.ecpay.com.tw/MerchantBasicInfo/MerchantBasicInfo')
     # 視窗最大化
-    driver.maximize_window()
+    # driver.maximize_window()
     # 點我登入
     driver.find_element(By.XPATH, '//*[@id="ecpayLogin"]').click()
     # 輸入帳號
