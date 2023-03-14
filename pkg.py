@@ -62,8 +62,10 @@ def open_driver():
 # 辨識圖片
 def getCaptcha(filepath):
     try:
+        now_path = os.getcwd()  # 查看現在在哪一個路徑
+        PATH = now_path + r"\Tesseract-OCR\tesseract.exe"
         # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-        pytesseract.pytesseract.tesseract_cmd = r"Tesseract-OCR\tesseract.exe"
+        pytesseract.pytesseract.tesseract_cmd = PATH
         img = Image.open(f"{filepath}")
         # img.show()
         imgResult = pytesseract.image_to_string(img, lang="eng").strip() # type=str
