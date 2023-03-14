@@ -16,9 +16,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import chromedriver_autoinstaller
-from pyvirtualdisplay import Display
-display = Display(visible=0, size=(800, 800))
-display.start()
+# from pyvirtualdisplay import Display
+# display = Display(visible=0, size=(800, 800))
+# display.start()
 # load_dotenv()
 # Account = os.getenv("Account")
 # Password = os.getenv("Password")
@@ -64,6 +64,7 @@ def getCaptcha(filepath):
     try:
         now_path = os.getcwd()  # 查看現在在哪一個路徑
         PATH = now_path + r"\Tesseract-OCR\tesseract.exe"
+        print('tesseract執行檔路徑'+PATH)
         # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
         pytesseract.pytesseract.tesseract_cmd = PATH
         img = Image.open(f"{filepath}")
