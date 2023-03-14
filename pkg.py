@@ -132,10 +132,11 @@ def AdminLogin(driver):
         driver.find_element(By.XPATH, '//*[@id="Password"]').send_keys(Password)
         # 輸入統一編號
         driver.find_element(By.XPATH, '//*[@id="AuthNO"]').send_keys(AuthNO)
-        filename = "captcha.png"
+        filename = "./captcha.png"
 
         captchaBase64 = catchBase64(driver)
         downloadImg(captchaBase64, filename)
+        print('下載圖片成功')
 
         # 處理圖片, 取得驗證碼
         number = getCaptcha(filename)
