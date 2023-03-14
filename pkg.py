@@ -19,7 +19,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import chromedriver_autoinstaller
 from pyvirtualdisplay import Display
-display = Display(visible=0, size=(1600, 900))
+display = Display(visible=0, size=(800, 600))
 display.start()
 # load_dotenv()
 # Account = os.getenv("Account")
@@ -73,18 +73,21 @@ def open_driver():
 
 def getCaptcha(filepath):
     try:
-        # now_path = os.getcwd()  # 查看現在在哪一個路徑
+        print('開啟圖檔準備辨識： ')
+        now_path = os.getcwd()  # 查看現在在哪一個路徑
+        print(now_path)
         # PATH = now_path + r"\Tesseract-OCR\tesseract.exe"
+
         # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
         pytesseract.pytesseract.tesseract_cmd = "./Tesseract-OCR/tesseract.exe"
         img = Image.open(filepath)
-        print('開啟圖檔準備辨識： '+img)
         # img.show()
         imgResult = pytesseract.image_to_string(
             img, lang="eng").strip()  # type=str
         print('辨識碼結果：', imgResult, type(imgResult))
         return imgResult
     except Exception as err:
+        print(f"識別失敗, 錯誤訊息: {err}")
         return logging.info(f"識別失敗, 錯誤訊息: {err}")
 
 # 下載圖片
@@ -105,6 +108,7 @@ def downloadImg(captchaBase64, filename):
         plt.savefig(filename)
         print(f'{filename}圖片下載')
     except Exception as err:
+        print(f'圖片讀檔失敗, 錯誤訊息: {err}')
         logging.info(f'圖片讀檔失敗, 錯誤訊息: {err}')
 
 # 用js處理base64
