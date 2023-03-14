@@ -59,7 +59,8 @@ def getCaptcha(filepath):
 
 # 讀cookiess
 with open('./ImageCookies.txt','r',encoding='utf-8') as file:
-    cookies = json.loads(file.read())
+    content = file.read().replace(']','').replace('[','')
+    cookies = json.loads(content)
 
 driver = open_driver()
 for cookie in cookies:
