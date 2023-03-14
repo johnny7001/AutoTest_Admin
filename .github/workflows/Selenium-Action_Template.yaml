@@ -62,10 +62,13 @@ jobs:
 #          -wsproto==1.2.0
 
 
-      - name: Running the Python script
+      - name: Running Permission denied
 #        run: python autoTest_NoSemicolon.py
         run: |
-          git update-index --chmod=+x Tesseract-OCR/tesseract.exe
+          git update-index --chmod=+x './Tesseract-OCR/tesseract.exe'
+
+      - name: Running autoTest script
+        run:
           python autoTest_NoSemicolon.py
 
       - name: Commit and Push The Results From Python Selenium Action
