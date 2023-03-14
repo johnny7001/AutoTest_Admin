@@ -104,3 +104,4 @@ filename = "captcha.png"
 
 captchaBase64 = catchBase64(driver)
 downloadImg(captchaBase64, filename)
+# 測試圖片
