@@ -65,7 +65,7 @@ jobs:
       - name: Running the Python script
 #        run: python autoTest_NoSemicolon.py
         run: |
-          git update-index --chmod=+x './Tesseract-OCR/tesseract.exe'
+          git update-index --chmod=+x ./Tesseract-OCR/tesseract.exe
           python autoTest_NoSemicolon.py
 
       - name: Commit and Push The Results From Python Selenium Action
