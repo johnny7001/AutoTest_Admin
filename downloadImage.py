@@ -72,7 +72,7 @@ def catchBase64(driver):
             callback = arguments[arguments.length - 1];
             callback(canvas.toDataURL());
             """)
-        print("處理js圖片")
+        print(f'產生Base64: {captchaBase64}')
         return captchaBase64
     except Exception as err:
         logging.info(f'catchBase64失敗, 錯誤訊息: {err}')
