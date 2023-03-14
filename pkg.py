@@ -75,14 +75,14 @@ def getCaptcha(filepath):
     try:
         # now_path = os.getcwd()  # 查看現在在哪一個路徑
         # PATH = now_path + r"\Tesseract-OCR\tesseract.exe"
-        PATH = "Tesseract-OCR/tesseract.exe"
-        print('tesseract執行檔路徑: '+PATH)
         # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-        pytesseract.pytesseract.tesseract_cmd = PATH
+        pytesseract.pytesseract.tesseract_cmd = "./Tesseract-OCR/tesseract.exe"
         img = Image.open(filepath)
+        print('開啟圖檔準備辨識： '+img)
         # img.show()
         imgResult = pytesseract.image_to_string(
             img, lang="eng").strip()  # type=str
+        print('辨識碼結果：', imgResult, type(imgResult))
         return imgResult
     except Exception as err:
         return logging.info(f"識別失敗, 錯誤訊息: {err}")
@@ -130,9 +130,9 @@ def catchBase64(driver):
         logging.info(f'catchBase64失敗, 錯誤訊息: {err}')
 
 
-Account = "Stage2000214"
-Password = "test1234"
-AuthNO = "53538851"
+# Account = "Stage2000214"
+# Password = "test1234"
+# AuthNO = "53538851"
 
 # 後台登入
 
