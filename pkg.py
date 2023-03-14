@@ -19,7 +19,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import chromedriver_autoinstaller
 from pyvirtualdisplay import Display
-display = Display(visible=0, size=(800, 600))
+display = Display(visible=0, size=(1600, 900))
 display.start()
 # load_dotenv()
 # Account = os.getenv("Account")
@@ -101,7 +101,7 @@ def downloadImg(captchaBase64, filename):
         i = mpimg.imread(i, format='PNG')  # 讀檔會失敗
         print('array:'+i)
         # # 顯示驗證碼
-        plt.imshow(i)
+        # plt.imshow(i)
         # 不顯示xy軸及邊框
         plt.axis('off')
         # plt.show()
