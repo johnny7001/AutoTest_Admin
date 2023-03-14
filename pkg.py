@@ -16,9 +16,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import chromedriver_autoinstaller
-# from pyvirtualdisplay import Display
-# display = Display(visible=0, size=(800, 800))
-# display.start()
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(1600, 900))
+display.start()
 # load_dotenv()
 # Account = os.getenv("Account")
 # Password = os.getenv("Password")
@@ -44,7 +44,7 @@ def open_driver():
         # PATH = now_path + "/chromedriver"
         chrome_options = webdriver.ChromeOptions()
         # chrome_options.add_argument('--headless') # 無頭
-        chrome_options.add_experimental_option("detach", True)
+        # chrome_options.add_experimental_option("detach", True)
         # 隱藏selenium的自動控制功能, 防止被偵測
         chrome_options.add_argument('--disable-blink-features=AutomationControlled')
         # 設置修改selenium的特徵值, 防止被偵測
