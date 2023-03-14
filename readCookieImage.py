@@ -59,11 +59,12 @@ def getCaptcha(filepath):
 
 # 讀cookiess
 with open('./ImageCookies.txt','r',encoding='utf-8') as file:
-    content = file.read()
-cookies = content.replace(']','').replace('[','') #　type=str
-# print(cookies, type(cookies))
+    cookies = json.loads(file.read())
+
 driver = open_driver()
-driver.add_cookie(json.dumps(cookies))
+for cookie in cookies:
+    driver.add_cookie(cookie)
+# print(cookies, type(cookies))
 driver.get('https://vendor-stage.ecpay.com.tw/MerchantBasicInfo/MerchantBasicInfo')
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 print(soup)
