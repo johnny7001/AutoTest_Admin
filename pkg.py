@@ -75,11 +75,11 @@ def getCaptcha(filepath):
     try:
         # now_path = os.getcwd()  # 查看現在在哪一個路徑
         # PATH = now_path + r"\Tesseract-OCR\tesseract.exe"
-        PATH = "./Tesseract-OCR/tesseract.exe"
+        PATH = "Tesseract-OCR/tesseract.exe"
         print('tesseract執行檔路徑: '+PATH)
         # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
         pytesseract.pytesseract.tesseract_cmd = PATH
-        img = Image.open(f"./{filepath}")
+        img = Image.open(filepath)
         # img.show()
         imgResult = pytesseract.image_to_string(
             img, lang="eng").strip()  # type=str
@@ -96,12 +96,13 @@ def downloadImg(captchaBase64, filename):
         i = base64.b64decode(captchaBase64.split(',')[1])
         i = io.BytesIO(i)
         i = mpimg.imread(i, format='PNG')  # 讀檔會失敗
+        print('array:'+i)
         # # 顯示驗證碼
         plt.imshow(i)
         # 不顯示xy軸及邊框
         plt.axis('off')
         # plt.show()
-        plt.savefig(f"./{filename}")
+        plt.savefig(filename)
         print(f'{filename}圖片下載')
     except Exception as err:
         logging.info(f'圖片讀檔失敗, 錯誤訊息: {err}')
@@ -162,7 +163,10 @@ def AdminLogin(driver):
 
         captchaBase64 = catchBase64(driver)
         downloadImg(captchaBase64, filename)
-
+        time.sleep(1)
+        imgOpen = Image.open(filename)
+        print(imgOpen.size)
+        print(imgOpen.mode)
         # 處理圖片, 取得驗證碼
         number = getCaptcha(filename)
         print(f'取得驗證碼: {number}')
