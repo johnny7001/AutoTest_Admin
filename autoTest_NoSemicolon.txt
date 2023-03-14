@@ -1,0 +1,671 @@
+2023-03-10 16:42:08,974 INFO: 取得驗證碼: 4608
+2023-03-10 16:42:13,285 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x011137D3]
+	(No symbol) [0x010A8B81]
+	(No symbol) [0x00FAB230]
+	(No symbol) [0x00FA3CE0]
+	(No symbol) [0x00FBDD34]
+	(No symbol) [0x00FFB494]
+	(No symbol) [0x00FBDB0E]
+	(No symbol) [0x00FFB216]
+	(No symbol) [0x00FD0D97]
+	(No symbol) [0x00FD253D]
+	GetHandleVerifier [0x0138ABF2+2510930]
+	GetHandleVerifier [0x013B8EC1+2700065]
+	GetHandleVerifier [0x013BC86C+2714828]
+	GetHandleVerifier [0x011C3480+645344]
+	(No symbol) [0x010B0FD2]
+	(No symbol) [0x010B6C68]
+	(No symbol) [0x010B6D4B]
+	(No symbol) [0x010C0D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-10 16:42:14,525 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-10 16:42:14,638 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-10 16:42:16,715 INFO: 如需設定多組信箱，中間請以半形分號區隔。
+2023-03-10 16:42:16,719 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。與工單要求相符
+2023-03-10 16:42:16,749 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-10 16:42:16,750 INFO: 信箱內容未被修改
+2023-03-10 16:45:36,090 INFO: 取得驗證碼: 1235
+2023-03-10 16:45:38,194 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x011137D3]
+	(No symbol) [0x010A8B81]
+	(No symbol) [0x00FAB230]
+	(No symbol) [0x00FA3CE0]
+	(No symbol) [0x00FBDD34]
+	(No symbol) [0x00FFB494]
+	(No symbol) [0x00FBDB0E]
+	(No symbol) [0x00FFB216]
+	(No symbol) [0x00FD0D97]
+	(No symbol) [0x00FD253D]
+	GetHandleVerifier [0x0138ABF2+2510930]
+	GetHandleVerifier [0x013B8EC1+2700065]
+	GetHandleVerifier [0x013BC86C+2714828]
+	GetHandleVerifier [0x011C3480+645344]
+	(No symbol) [0x010B0FD2]
+	(No symbol) [0x010B6C68]
+	(No symbol) [0x010B6D4B]
+	(No symbol) [0x010C0D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-10 16:46:21,463 INFO: 取得驗證碼: 6389
+2023-03-10 16:46:25,864 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x011137D3]
+	(No symbol) [0x010A8B81]
+	(No symbol) [0x00FAB230]
+	(No symbol) [0x00FA3CE0]
+	(No symbol) [0x00FBDD34]
+	(No symbol) [0x00FFB494]
+	(No symbol) [0x00FBDB0E]
+	(No symbol) [0x00FFB216]
+	(No symbol) [0x00FD0D97]
+	(No symbol) [0x00FD253D]
+	GetHandleVerifier [0x0138ABF2+2510930]
+	GetHandleVerifier [0x013B8EC1+2700065]
+	GetHandleVerifier [0x013BC86C+2714828]
+	GetHandleVerifier [0x011C3480+645344]
+	(No symbol) [0x010B0FD2]
+	(No symbol) [0x010B6C68]
+	(No symbol) [0x010B6D4B]
+	(No symbol) [0x010C0D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-10 16:46:28,238 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-10 16:46:28,356 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-10 16:46:30,443 INFO: 如需設定多組信箱，中間請以半形分號區隔。
+2023-03-10 16:46:30,446 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。與工單要求相符
+2023-03-10 16:46:30,497 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-10 16:46:30,497 INFO: 信箱內容未被修改
+2023-03-10 16:46:59,796 INFO: 取得驗證碼: 3634
+2023-03-10 16:47:05,010 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x011137D3]
+	(No symbol) [0x010A8B81]
+	(No symbol) [0x00FAB230]
+	(No symbol) [0x00FA3CE0]
+	(No symbol) [0x00FBDD34]
+	(No symbol) [0x00FFB494]
+	(No symbol) [0x00FBDB0E]
+	(No symbol) [0x00FFB216]
+	(No symbol) [0x00FD0D97]
+	(No symbol) [0x00FD253D]
+	GetHandleVerifier [0x0138ABF2+2510930]
+	GetHandleVerifier [0x013B8EC1+2700065]
+	GetHandleVerifier [0x013BC86C+2714828]
+	GetHandleVerifier [0x011C3480+645344]
+	(No symbol) [0x010B0FD2]
+	(No symbol) [0x010B6C68]
+	(No symbol) [0x010B6D4B]
+	(No symbol) [0x010C0D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-10 16:47:06,930 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-10 16:47:07,048 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-10 16:47:09,124 INFO: 如需設定多組信箱，中間請以半形分號區隔。
+2023-03-10 16:47:09,128 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。與工單要求相符
+2023-03-10 16:47:09,177 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-10 16:47:09,178 INFO: 信箱內容未被修改
+2023-03-10 17:44:50,376 INFO: 取得驗證碼: 8925
+2023-03-10 17:44:54,661 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x011137D3]
+	(No symbol) [0x010A8B81]
+	(No symbol) [0x00FAB230]
+	(No symbol) [0x00FA3CE0]
+	(No symbol) [0x00FBDD34]
+	(No symbol) [0x00FFB494]
+	(No symbol) [0x00FBDB0E]
+	(No symbol) [0x00FFB216]
+	(No symbol) [0x00FD0D97]
+	(No symbol) [0x00FD253D]
+	GetHandleVerifier [0x0138ABF2+2510930]
+	GetHandleVerifier [0x013B8EC1+2700065]
+	GetHandleVerifier [0x013BC86C+2714828]
+	GetHandleVerifier [0x011C3480+645344]
+	(No symbol) [0x010B0FD2]
+	(No symbol) [0x010B6C68]
+	(No symbol) [0x010B6D4B]
+	(No symbol) [0x010C0D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-10 17:44:56,676 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloTaiwan@gmail.com;helloTaiwan@gmail.com
+2023-03-10 17:44:56,806 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-10 17:44:58,886 INFO: 如需設定多組信箱，中間請以半形分號區隔。
+2023-03-10 17:44:58,889 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。與工單要求相符
+2023-03-10 17:44:58,939 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloTaiwan@gmail.com;helloTaiwan@gmail.com
+2023-03-10 17:44:58,939 INFO: 信箱內容未被修改
+2023-03-13 09:03:08,064 INFO: 取得驗證碼: 3284
+2023-03-13 09:03:14,879 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 09:03:18,169 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloTaiwan@gmail.com;helloTaiwan@gmail.com;helloJapan@gmail.com
+2023-03-13 09:03:18,278 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 09:03:20,352 INFO: 如需設定多組信箱，中間請以半形分號區隔。
+2023-03-13 09:03:20,358 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。與工單要求相符
+2023-03-13 09:03:20,393 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloTaiwan@gmail.com;helloTaiwan@gmail.com;helloJapan@gmail.com
+2023-03-13 09:03:20,409 INFO: 信箱內容未被修改
+2023-03-13 09:35:00,763 INFO: 取得驗證碼: 4498
+2023-03-13 09:35:10,321 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 09:35:12,509 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloTaiwan@gmail.com;helloJapan@gmail.com;helloJapan@gmail.com;helloJapan@gmail.co
+2023-03-13 09:35:12,616 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 09:35:14,692 INFO: 更新成功
+2023-03-13 09:35:14,696 INFO: 彈跳視窗回傳訊息: 更新成功與工單要求不相符
+2023-03-13 09:35:15,697 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloTaiwan@gmail.com;helloJapan@gmail.com;helloJapan@gmail.com;helloJapan@gmail.co
+2023-03-13 09:35:15,697 INFO: 信箱內容未被修改
+2023-03-13 09:36:00,964 INFO: 取得驗證碼: 7470
+2023-03-13 09:36:06,454 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 09:36:08,429 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloTaiwan@gmail.com;helloJapan@gmail.com;helloJapan@gmail.com;helloJapan@gmail.co
+2023-03-13 09:36:08,554 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 09:36:10,631 INFO: 更新成功
+2023-03-13 09:36:10,634 INFO: 彈跳視窗回傳訊息: 更新成功與工單要求不相符
+2023-03-13 09:36:12,150 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloTaiwan@gmail.com;helloJapan@gmail.com;helloJapan@gmail.com;helloJapan@gmail.co
+2023-03-13 09:36:12,150 INFO: 信箱內容未被修改
+2023-03-13 09:37:31,364 INFO: 取得驗證碼: 6432
+2023-03-13 09:37:35,567 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 09:37:37,535 INFO: 修改之前的電子信箱:123@ecpay.com.tw
+2023-03-13 09:37:37,676 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 09:37:39,762 INFO: 如需設定多組信箱，中間請以半形分號區隔。
+2023-03-13 09:37:39,765 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。與工單要求相符
+2023-03-13 09:37:39,816 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw
+2023-03-13 09:37:39,816 INFO: 信箱內容未被修改
+2023-03-13 09:50:32,906 INFO: 取得驗證碼: 7080
+2023-03-13 09:50:37,319 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 09:50:39,289 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 09:50:39,407 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 09:50:41,484 INFO: 如需設定多組信箱，中間請以半形分號區隔。
+2023-03-13 09:50:41,488 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。與工單要求相符
+2023-03-13 09:50:41,526 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 09:50:41,526 INFO: 信箱內容未被修改
+2023-03-13 10:51:42,277 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 10:51:44,378 INFO: 修改之前的電子信箱:123@ecpay.com.tw
+2023-03-13 10:51:44,519 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 10:51:46,595 INFO: 如需設定多組信箱，中間請以半形分號區隔。
+2023-03-13 10:51:46,596 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。與工單要求相符
+2023-03-13 10:51:46,630 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw
+2023-03-13 10:51:46,630 INFO: 信箱內容未被修改
+2023-03-13 11:01:07,611 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 11:01:50,191 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 11:01:53,671 INFO: 修改之前的電子信箱:123@ecpay.com.tw
+2023-03-13 11:01:53,816 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 11:01:55,888 INFO: 如需設定多組信箱，中間請以半形分號區隔。
+2023-03-13 11:01:55,893 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。與工單要求相符-Pass
+2023-03-13 11:01:55,939 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw
+2023-03-13 11:01:55,939 INFO: 信箱內容未被修改-Pass
+2023-03-13 11:07:07,626 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 11:07:10,808 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 11:07:10,963 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 11:07:13,035 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。與工單要求相符-Pass
+2023-03-13 11:07:13,071 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 11:07:13,071 INFO: 信箱內容未被修改-Pass
+2023-03-13 11:13:52,022 INFO: 彈跳視窗訊息: 驗證碼錯誤！請重新輸入。
+2023-03-13 11:13:58,541 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 11:14:01,884 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 11:14:02,032 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 11:14:04,118 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 11:14:04,153 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 11:14:04,153 INFO: 信箱內容未被修改-Pass
+2023-03-13 11:33:53,696 INFO: 登入成功, 錯誤訊息: Message: no such alert
+  (Session info: chrome=110.0.5481.180)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010D37D3]
+	(No symbol) [0x01068B81]
+	(No symbol) [0x00F6B230]
+	(No symbol) [0x00F63CE0]
+	(No symbol) [0x00F7DD34]
+	(No symbol) [0x00FBB494]
+	(No symbol) [0x00F7DB0E]
+	(No symbol) [0x00FBB216]
+	(No symbol) [0x00F90D97]
+	(No symbol) [0x00F9253D]
+	GetHandleVerifier [0x0134ABF2+2510930]
+	GetHandleVerifier [0x01378EC1+2700065]
+	GetHandleVerifier [0x0137C86C+2714828]
+	GetHandleVerifier [0x01183480+645344]
+	(No symbol) [0x01070FD2]
+	(No symbol) [0x01076C68]
+	(No symbol) [0x01076D4B]
+	(No symbol) [0x01080D6B]
+	BaseThreadInitThunk [0x774400F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7B8E+238]
+
+2023-03-13 11:33:57,061 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloJapan@gmail.com;helloJapan@gmail.com
+2023-03-13 11:33:57,183 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 11:33:59,244 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 11:33:59,301 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloJapan@gmail.com;helloJapan@gmail.com
+2023-03-13 11:33:59,301 INFO: 信箱內容未被修改-Pass
+2023-03-13 11:44:22,344 INFO: 登入成功
+2023-03-13 11:44:25,645 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 11:44:25,766 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 11:44:27,848 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 11:44:27,895 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 11:44:27,895 INFO: 信箱內容未被修改-Pass
+2023-03-13 13:18:29,049 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:18:29,182 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 13:18:31,260 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 13:18:31,295 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:18:31,295 INFO: 信箱內容未被修改-Pass
+2023-03-13 13:18:31,295 INFO: ======================================================================================================================================================
+2023-03-13 13:18:54,737 INFO: 修改之前的電子信箱:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:18:54,857 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 13:18:56,942 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 13:18:56,976 INFO: 檢查信箱內容是否有被更修改:123@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:18:56,976 INFO: 信箱內容未被修改-Pass
+2023-03-13 13:18:56,976 INFO: ======================================================================================================================================================
+2023-03-13 13:29:29,354 INFO: 修改之前的電子信箱:1678685327@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:29:29,485 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 13:29:31,568 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 13:29:31,615 INFO: 檢查信箱內容是否有被更修改:1678685327@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:29:31,615 INFO: 信箱內容未被修改-Pass
+2023-03-13 13:29:31,615 INFO: ======================================================================================================================================================
+2023-03-13 13:41:08,405 INFO: 修改之前的電子信箱:1678685327@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:41:08,532 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 13:41:10,595 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 13:41:10,630 INFO: 檢查信箱內容是否有被更修改:1678685327@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:41:10,630 INFO: 信箱內容未被修改-Pass
+2023-03-13 13:41:10,630 INFO: ======================================================================================================================================================
+2023-03-13 13:47:02,440 INFO: 修改之前的電子信箱:1678685327@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:47:02,595 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 13:47:04,659 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 13:47:05,897 INFO: 檢查信箱內容是否有被更修改:1678685327@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:47:05,897 INFO: 信箱內容未被修改-Pass
+2023-03-13 13:47:05,897 INFO: ======================================================================================================================================================
+2023-03-13 13:50:41,275 INFO: 修改之前的電子信箱:1678686616@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:50:41,382 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 13:50:43,463 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 13:50:45,492 INFO: 檢查信箱內容是否有被更修改:1678686616@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 13:50:45,492 INFO: 信箱內容未被修改-Pass
+2023-03-13 13:50:45,492 INFO: ======================================================================================================================================================
+2023-03-13 14:12:02,069 INFO: 修改之前的電子信箱:1678687896@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 14:12:02,188 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 14:12:04,251 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 14:12:05,543 INFO: 檢查信箱內容是否有被更修改:1678687896@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 14:12:05,543 INFO: 信箱內容未被修改-Pass
+2023-03-13 14:12:05,544 INFO: ======================================================================================================================================================
+2023-03-13 14:12:38,191 INFO: 修改之前的電子信箱:1678687896@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 14:12:38,353 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 14:12:40,421 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 14:12:41,483 INFO: 檢查信箱內容是否有被更修改:1678687896@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 14:12:41,484 INFO: 信箱內容未被修改-Pass
+2023-03-13 14:12:41,484 INFO: ======================================================================================================================================================
+2023-03-13 14:20:00,639 INFO: 修改之前的電子信箱:1678687896@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 14:20:00,772 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 14:20:02,842 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 14:20:04,185 INFO: 檢查信箱內容是否有被更修改:1678687896@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 14:20:04,186 INFO: 信箱內容未被修改-Pass
+2023-03-13 14:20:04,186 INFO: ======================================================================================================================================================
+2023-03-13 14:24:37,494 INFO: 修改之前的電子信箱:1678687896@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 14:24:37,681 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 14:24:39,767 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 14:24:41,098 INFO: 檢查信箱內容是否有被更修改:1678687896@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 14:24:41,099 INFO: 信箱內容未被修改-Pass
+2023-03-13 14:24:41,099 INFO: ======================================================================================================================================================
+2023-03-13 14:51:09,563 INFO: 修改之前的電子信箱:1678690221@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 14:51:09,658 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 14:51:11,733 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 14:51:14,023 INFO: 檢查信箱內容是否有被更修改:1678690221@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 14:51:14,023 INFO: 信箱內容未被修改-Pass
+2023-03-13 14:51:14,023 INFO: ======================================================================================================================================================
+2023-03-13 15:04:51,095 INFO: 修改之前的電子信箱:1678690221@ecpay.com.tw;1678690300@ecpay.com.tw
+2023-03-13 15:04:51,203 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 15:04:53,280 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 15:04:55,633 INFO: 檢查信箱內容是否有被更修改:1678690221@ecpay.com.tw;1678690300@ecpay.com.tw
+2023-03-13 15:04:55,633 INFO: 信箱內容未被修改-Pass
+2023-03-13 15:04:55,633 INFO: ======================================================================================================================================================
+2023-03-13 15:48:13,400 INFO: 修改之前的電子信箱:1678693669@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 15:48:13,496 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 15:48:15,563 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 15:48:16,726 INFO: 檢查信箱內容是否有被更修改:1678693669@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 15:48:16,726 INFO: 信箱內容未被修改-Pass
+2023-03-13 15:48:16,726 INFO: ======================================================================================================================================================
+2023-03-13 16:22:08,781 INFO: 修改之前的電子信箱:1678695698@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 16:22:08,909 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 16:22:11,002 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 16:22:12,061 INFO: 檢查信箱內容是否有被更修改:1678695698@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 16:22:12,062 INFO: 信箱內容未被修改-Pass
+2023-03-13 16:22:12,062 INFO: ======================================================================================================================================================
+2023-03-13 16:24:33,281 INFO: 修改之前的電子信箱:1678695698@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 16:24:33,407 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 16:24:35,482 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 16:24:36,701 INFO: 檢查信箱內容是否有被更修改:1678695698@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 16:24:36,702 INFO: 信箱內容未被修改-Pass
+2023-03-13 16:24:36,702 INFO: ======================================================================================================================================================
+2023-03-13 16:53:30,458 INFO: 修改之前的電子信箱:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 16:53:30,577 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 16:53:32,663 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 16:53:33,724 INFO: 檢查信箱內容是否有被更修改:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 16:53:33,724 INFO: 信箱內容未被修改-Pass
+2023-03-13 16:53:33,724 INFO: ======================================================================================================================================================
+2023-03-13 17:20:21,201 INFO: 修改之前的電子信箱:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:20:21,334 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 17:20:23,405 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 17:20:24,455 INFO: 檢查信箱內容是否有被更修改:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:20:24,455 INFO: 信箱內容未被修改-Pass
+2023-03-13 17:20:24,455 INFO: ======================================================================================================================================================
+2023-03-13 17:40:13,713 INFO: 修改之前的電子信箱:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:40:13,824 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 17:40:15,905 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 17:40:16,964 INFO: 檢查信箱內容是否有被更修改:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:40:16,964 INFO: 信箱內容未被修改-Pass
+2023-03-13 17:40:16,965 INFO: ======================================================================================================================================================
+2023-03-13 17:47:04,667 INFO: 修改之前的電子信箱:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:47:04,786 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 17:47:06,867 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 17:47:08,804 INFO: 檢查信箱內容是否有被更修改:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:47:08,804 INFO: 信箱內容未被修改-Pass
+2023-03-13 17:47:08,804 INFO: ======================================================================================================================================================
+2023-03-13 17:49:13,786 INFO: 修改之前的電子信箱:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:49:13,916 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 17:49:16,006 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 17:49:17,190 INFO: 檢查信箱內容是否有被更修改:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:49:17,190 INFO: 信箱內容未被修改-Pass
+2023-03-13 17:49:17,191 INFO: ======================================================================================================================================================
+2023-03-13 17:54:31,198 INFO: 修改之前的電子信箱:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:54:31,335 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 17:54:33,420 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 17:54:34,484 INFO: 檢查信箱內容是否有被更修改:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:54:34,484 INFO: 信箱內容未被修改-Pass
+2023-03-13 17:54:34,484 INFO: ======================================================================================================================================================
+2023-03-13 17:59:02,109 INFO: 修改之前的電子信箱:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:59:02,272 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-13 17:59:04,357 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-13 17:59:05,586 INFO: 檢查信箱內容是否有被更修改:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-13 17:59:05,587 INFO: 信箱內容未被修改-Pass
+2023-03-13 17:59:05,587 INFO: ======================================================================================================================================================
+2023-03-14 09:28:47,596 INFO: 修改之前的電子信箱:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-14 09:28:47,721 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-14 09:28:49,796 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-14 09:28:51,129 INFO: 檢查信箱內容是否有被更修改:1678697586@ecpay.com.tw;helloJapan@gmail.com
+2023-03-14 09:28:51,129 INFO: 信箱內容未被修改-Pass
+2023-03-14 09:28:51,129 INFO: ======================================================================================================================================================
+2023-03-14 09:33:19,766 INFO: 修改之前的電子信箱:1678757574@ecpay.com.tw;helloJapan@gmail.com
+2023-03-14 09:33:19,932 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-14 09:33:22,019 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-14 09:33:23,170 INFO: 檢查信箱內容是否有被更修改:1678757574@ecpay.com.tw;helloJapan@gmail.com
+2023-03-14 09:33:23,171 INFO: 信箱內容未被修改-Pass
+2023-03-14 09:33:23,171 INFO: ======================================================================================================================================================
+2023-03-14 11:09:02,799 INFO: 識別失敗, 錯誤訊息: (3221225781, '')
+2023-03-14 11:09:47,770 INFO: 修改之前的電子信箱:1678757574@ecpay.com.tw;helloJapan@gmail.com
+2023-03-14 11:09:47,994 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-14 11:09:50,084 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-14 11:09:51,381 INFO: 檢查信箱內容是否有被更修改:1678757574@ecpay.com.tw;helloJapan@gmail.com
+2023-03-14 11:09:51,382 INFO: 信箱內容未被修改-Pass
+2023-03-14 11:09:51,382 INFO: ======================================================================================================================================================
+2023-03-14 13:51:28,179 INFO: 修改之前的電子信箱:1678757574@ecpay.com.tw;helloJapan@gmail.com
+2023-03-14 13:51:28,315 INFO: 輸入的電子信箱:helloJapan@gmail.com
+2023-03-14 13:51:30,406 INFO: 彈跳視窗回傳訊息: 如需設定多組信箱，中間請以半形分號區隔。-Pass
+2023-03-14 13:51:32,716 INFO: 檢查信箱內容是否有被更修改:1678757574@ecpay.com.tw;helloJapan@gmail.com
+2023-03-14 13:51:32,716 INFO: 信箱內容未被修改-Pass
+2023-03-14 13:51:32,716 INFO: ======================================================================================================================================================
