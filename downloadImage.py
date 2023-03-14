@@ -92,15 +92,15 @@ driver.find_element(By.XPATH, '//*[@id="ecpayLogin"]').click()
 driver.find_element(By.XPATH, '//*[@id="Account"]').send_keys(Account)
 
 # 判斷是否有彈跳視窗, 若有彈跳視窗表示登入失敗
-while True:
-    # 點選繼續
-    driver.find_element(By.XPATH, '//*[@id="LoginAllPay"]').click()
-    driver.implicitly_wait(10)
-    # 輸入密碼
-    driver.find_element(By.XPATH, '//*[@id="Password"]').send_keys(Password)
-    # 輸入統一編號
-    driver.find_element(By.XPATH, '//*[@id="AuthNO"]').send_keys(AuthNO)
-    filename = "captcha.png"
+# while True:
+# 點選繼續
+driver.find_element(By.XPATH, '//*[@id="LoginAllPay"]').click()
+driver.implicitly_wait(10)
+# 輸入密碼
+driver.find_element(By.XPATH, '//*[@id="Password"]').send_keys(Password)
+# 輸入統一編號
+driver.find_element(By.XPATH, '//*[@id="AuthNO"]').send_keys(AuthNO)
+filename = "captcha.png"
 
-    captchaBase64 = catchBase64(driver)
-    downloadImg(captchaBase64, filename)
+captchaBase64 = catchBase64(driver)
+downloadImg(captchaBase64, filename)
