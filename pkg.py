@@ -63,8 +63,9 @@ def open_driver():
 def getCaptcha(filepath):
     try:
         # now_path = os.getcwd()  # 查看現在在哪一個路徑
-        PATH = "./Tesseract-OCR/tesseract.exe"
-        print('tesseract執行檔路徑'+PATH)
+        # PATH = now_path + r"\Tesseract-OCR\tesseract.exe"
+        PATH = "/home/runner/work/AutoTest_Admin/Tesseract-OCR/tesseract.exe"
+        print('tesseract執行檔路徑: '+PATH)
         # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
         pytesseract.pytesseract.tesseract_cmd = PATH
         img = Image.open(f"{filepath}")
@@ -86,7 +87,8 @@ def downloadImg(captchaBase64, filename):
         # 不顯示xy軸及邊框
         plt.axis('off')
         # plt.show()
-        plt.savefig(filename)
+        plt.savefig(f"/home/runner/work/AutoTest_Admin/{filename}")
+        print(f'{filename}圖片下載')
     except Exception as err:
         logging.info(f'圖片讀檔失敗, 錯誤訊息: {err}')
 
@@ -105,6 +107,7 @@ def catchBase64(driver):
             callback = arguments[arguments.length - 1];
             callback(canvas.toDataURL());
             """)
+        print("處理js圖片")
         return captchaBase64
     except Exception as err:
         logging.info(f'catchBase64失敗, 錯誤訊息: {err}')
@@ -132,14 +135,13 @@ def AdminLogin(driver):
         driver.find_element(By.XPATH, '//*[@id="Password"]').send_keys(Password)
         # 輸入統一編號
         driver.find_element(By.XPATH, '//*[@id="AuthNO"]').send_keys(AuthNO)
-        filename = "./captcha.png"
+        filename = "captcha.png"
 
         captchaBase64 = catchBase64(driver)
         downloadImg(captchaBase64, filename)
-        print('下載圖片成功')
 
         # 處理圖片, 取得驗證碼
-        number = getCaptcha(filename)
+        number = getCaptcha(f'/home/runner/work/AutoTest_Admin/{filename}')
         print(f'取得驗證碼: {number}')
 
         while number.isdigit() != True or len(number) < 4:
