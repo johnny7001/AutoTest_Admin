@@ -3,6 +3,7 @@ import logging
 from bs4 import BeautifulSoup
 import pytesseract
 from PIL import Image
+import json
 import time
 import base64
 import io
@@ -62,7 +63,7 @@ with open('./ImageCookies.txt','r',encoding='utf-8') as file:
 cookies = content.replace(']','').replace('[','') #　type=str
 # print(cookies, type(cookies))
 driver = open_driver()
-driver.add_cookie(cookies)
+driver.add_cookie(json.loads(cookies))
 driver.get('https://vendor-stage.ecpay.com.tw/MerchantBasicInfo/MerchantBasicInfo')
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 print(soup)
