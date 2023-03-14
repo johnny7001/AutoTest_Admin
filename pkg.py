@@ -17,7 +17,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import chromedriver_autoinstaller
 from pyvirtualdisplay import Display
-display = Display(visible=0, size=(800, 800))
+display = Display(visible=0, size=(1200, 1200))
 display.start()
 # load_dotenv()
 # Account = os.getenv("Account")
