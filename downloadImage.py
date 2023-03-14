@@ -102,6 +102,10 @@ driver.find_element(By.XPATH, '//*[@id="Password"]').send_keys(Password)
 driver.find_element(By.XPATH, '//*[@id="AuthNO"]').send_keys(AuthNO)
 filename = "captcha.png"
 
+# 下載圖片
 captchaBase64 = catchBase64(driver)
 downloadImg(captchaBase64, filename)
-# 測試圖片
+
+ListCookies = driver.get_cookies()  # type = list
+print('印出cookies: ')
+print(ListCookies)
