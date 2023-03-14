@@ -52,7 +52,7 @@ def downloadImg(captchaBase64, filename):
         # 不顯示xy軸及邊框
         plt.axis('off')
         # plt.show()
-        plt.savefig(f"/home/runner/work/AutoTest_Admin/{filename}")
+        plt.savefig(f"./{filename}")
         print(f'{filename}圖片下載')
     except Exception as err:
         logging.info(f'圖片讀檔失敗, 錯誤訊息: {err}')
