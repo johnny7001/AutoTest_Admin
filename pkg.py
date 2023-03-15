@@ -73,7 +73,7 @@ def open_driver():
 
 def getCaptcha(filepath):
     try:
-        print(os.listdir("/usr/share/tesseract-ocr/bin"))
+        print(os.listdir("/usr/share/tesseract-ocr"))
         print('開啟圖檔準備辨識： ')
         now_path = os.getcwd()  # 查看現在在哪一個路徑
         print(now_path)
@@ -88,7 +88,7 @@ def getCaptcha(filepath):
         print('辨識碼結果：', imgResult, type(imgResult))
         return imgResult
     except Exception as err:
-        print(os.listdir("/usr/share/tesseract-ocr/bin"))
+        print(os.listdir("/usr/share/tesseract-ocr"))
         print(f"識別失敗, 錯誤訊息: {err}")
         return logging.info(f"識別失敗, 錯誤訊息: {err}")
 
