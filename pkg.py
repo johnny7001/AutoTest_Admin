@@ -73,6 +73,7 @@ def open_driver():
 
 def getCaptcha(filepath):
     try:
+        print(os.listdir("/usr/share/tesseract-ocr/bin"))
         print('開啟圖檔準備辨識： ')
         now_path = os.getcwd()  # 查看現在在哪一個路徑
         print(now_path)
