@@ -71,7 +71,7 @@ jobs:
           git update-index --chmod=-x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
           git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
           git add -A
-          git commit -m "update"
+          git commit -m "Tesseract-OCR update 0315"
           git push
 
       - name: Running autoTest script
