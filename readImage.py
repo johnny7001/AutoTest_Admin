@@ -5,7 +5,7 @@ filepath = 'captcha.png'
 
 def getCaptcha(filepath):
     try:
-        pytesseract.pytesseract.tesseract_cmd = "./Tesseract-OCR/tesseract.exe"
+        pytesseract.pytesseract.tesseract_cmd = "Tesseract-OCR/tesseract.exe"
         img = Image.open(filepath)
         # img.show()
         # 處理圖片array
