@@ -64,12 +64,12 @@ jobs:
 
       - name: Running Permission denied
 #        run: python autoTest_NoSemicolon.py
-        run: |
+        run: git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
 #          git config --global user.name "johnny7001"
 #          git config --global user.email "theforeverwen@gmail.com"
 #          git config core.filemode false
 #          git update-index --chmod=-x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
-          git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+
 #          git add -A
 #          git commit -m "Tesseract-OCR update 0315"
 #          git push
