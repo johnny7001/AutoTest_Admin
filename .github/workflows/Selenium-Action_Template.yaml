@@ -64,12 +64,13 @@ jobs:
 
       - name: chmod Tesseract-OCR commit and push
         run: |
-          git update-index --skip-worktree --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
-          git config --global user.name "johnny7001"
-          git config --global user.email "theforeverwen@gmail.com"
-          git add -A
-          git commit -m "Tesseract-OCR update 0315"
-          git push
+          sudo chmod +x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+#          git update-index --skip-worktree --chmod=+x ./home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+#          git config --global user.name "johnny7001"
+#          git config --global user.email "theforeverwen@gmail.com"
+#          git add -A
+#          git commit -m "Tesseract-OCR update 0315"
+#          git push
 #                    chmod -x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
 #                    git update-index --skip-worktree --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
 #          git config --global user.name "johnny7001"
