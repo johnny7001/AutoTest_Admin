@@ -28,6 +28,7 @@ jobs:
       - name: core filemode
         run: git config --global core.filemode false
       - name: run chmod tesseract
+        run: |
           git update-index --chmod=-x Tesseract-OCR/tesseract.exe
           git update-index --chmod=+x Tesseract-OCR/tesseract.exe
           git config --global user.name "johnny7001"
