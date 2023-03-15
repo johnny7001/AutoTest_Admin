@@ -61,13 +61,12 @@ jobs:
 #          -urllib3==1.26.14
 #          -wsproto==1.2.0
 
-
-      - name: core.filemode
-        run: git config core.filemode false
-      - name: chmod Tesseract-OCR
-        run: git update-index --chmod=+x Tesseract-OCR/tesseract.exe
-      - name: commit and push
+      - name: chmod Tesseract-OCR commit and push
         run: |
+          git config core.filemode false
+          chmod -x Tesseract-OCR/tesseract.exe
+          git update-index --skip-worktree --chmod=+x Tesseract-OCR/tesseract.exe
+          chmod +x Tesseract-OCR/tesseract.exe
           git config --global user.name "johnny7001"
           git config --global user.email "theforeverwen@gmail.com"
           git add -A
