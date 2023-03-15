@@ -1,0 +1,1 @@
+web gunicorn autoTest_NoSemicolon:app
