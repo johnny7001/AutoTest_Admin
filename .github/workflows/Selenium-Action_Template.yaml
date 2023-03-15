@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 name: Run Selenium On GitHub Action
 on:
   workflow_dispatch:
@@ -64,8 +64,10 @@ jobs:
 
       - name: chmod Tesseract-OCR commit and push
         run: |
-          git update-index --chmod=-x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
-          git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+          git add --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+          chmod -x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+          git ci -m 'chmod tesseract.exe' /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+          git add --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
           git config --global user.name "johnny7001"
           git config --global user.email "theforeverwen@gmail.com"
           git commit -m "Tesseract-OCR update 0315"
