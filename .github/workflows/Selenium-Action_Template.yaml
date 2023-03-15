@@ -62,11 +62,12 @@ jobs:
 #          -wsproto==1.2.0
 
 
-      - name: Running Permission denied
-#        run: python autoTest_NoSemicolon.py
+      - name: core.filemode
+        run: git config core.filemode false
+      - name: chmod Tesseract-OCR
+        run: git update-index --chmod=+x --Tesseract-OCR/tesseract.exe
+      - name: commit and push
         run: |
-          git config core.filemode false
-          git update-index --chmod=+x Tesseract-OCR/tesseract.exe
           git config --global user.name "johnny7001"
           git config --global user.email "theforeverwen@gmail.com"
           git add -A
