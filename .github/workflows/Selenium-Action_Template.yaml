@@ -66,7 +66,7 @@ jobs:
 #        run: python autoTest_NoSemicolon.py
         run: |
           git config core.filemode false
-          git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+          git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract
           git config --global user.name "johnny7001"
           git config --global user.email "theforeverwen@gmail.com"
           git add -A
