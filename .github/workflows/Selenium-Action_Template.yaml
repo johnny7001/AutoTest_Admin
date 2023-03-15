@@ -25,9 +25,9 @@ jobs:
       - name: Install env
         run: pip install -r requirements.txt
 
-      - name: chmod Tesseract-OCR commit and push
-        run: |
-          git config --global core.filemode false
+      - name: core filemode
+        run: git config --global core.filemode false
+      - name: run chmod tesseract
           git update-index --chmod=-x Tesseract-OCR/tesseract.exe
           git update-index --chmod=+x Tesseract-OCR/tesseract.exe
           git config --global user.name "johnny7001"
