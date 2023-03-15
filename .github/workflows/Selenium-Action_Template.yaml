@@ -62,9 +62,9 @@ jobs:
 #          -urllib3==1.26.14
 #          -wsproto==1.2.0
 
-      - name: chmod Tesseract-OCR commit and push
-        run: |
-          git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+#      - name: chmod Tesseract-OCR commit and push
+#        run: |
+#          git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
 #            sudo chmod +x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
 #          git config --global user.name "johnny7001"
 #          git config --global user.email "theforeverwen@gmail.com"
