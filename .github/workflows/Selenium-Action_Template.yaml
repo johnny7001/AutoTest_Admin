@@ -26,11 +26,13 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: core filemode
-        run: git config --global core.filemode false
-      - name: run chmod tesseract
         run: |
+          git config --global core.filemode false
           git update-index --chmod=-x Tesseract-OCR/tesseract.exe
           git update-index --chmod=+x Tesseract-OCR/tesseract.exe
+
+      - name: run chmod tesseract
+        run: |
           git config --global user.name "johnny7001"
           git config --global user.email "theforeverwen@gmail.com"
           git add -A
