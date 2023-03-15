@@ -33,6 +33,7 @@ jobs:
           git update-index --chmod=+x Tesseract-OCR/tesseract.exe
           git config --global user.name "johnny7001"
           git config --global user.email "theforeverwen@gmail.com"
+          git add -A
           git commit -m "Tesseract-OCR update 0315"
           git push
 #          git update-index --chmod=-x Tesseract-OCR/tesseract.exe
