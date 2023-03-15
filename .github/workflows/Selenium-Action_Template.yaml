@@ -64,10 +64,11 @@ jobs:
 
       - name: chmod Tesseract-OCR commit and push
         run: |
+          sudo chmod -x Tesseract-OCR/tesseract.exe
           git update-index --chmod=-x Tesseract-OCR/tesseract.exe
-          chmod -x Tesseract-OCR/tesseract.exe
           git update-index --chmod=+x Tesseract-OCR/tesseract.exe
           git config core.filemode false
+          git add -A
           git config --global user.name "johnny7001"
           git config --global user.email "theforeverwen@gmail.com"
           git commit -m "Tesseract-OCR update 0315"
