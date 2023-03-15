@@ -65,7 +65,7 @@ jobs:
       - name: core.filemode
         run: git config core.filemode false
       - name: chmod Tesseract-OCR
-        run: git update-index --chmod=+x --Tesseract-OCR/tesseract.exe
+        run: git update-index --chmod=+x Tesseract-OCR/tesseract.exe
       - name: commit and push
         run: |
           git config --global user.name "johnny7001"
