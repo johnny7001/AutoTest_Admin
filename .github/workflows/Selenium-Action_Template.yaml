@@ -62,9 +62,21 @@ jobs:
 #          -wsproto==1.2.0
 
 
-      - name: Running the Python script
+      - name: Running Permission denied
 #        run: python autoTest_NoSemicolon.py
-        run: python downloadImage.py
+        run: |
+          git config --global user.name "johnny7001"
+          git config --global user.email "theforeverwen@gmail.com"
+          git config core.filemode false
+          git update-index --chmod=-x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+          git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
+          git add -A
+          git commit -m "update"
+          git push
+
+      - name: Running autoTest script
+        run:
+          python autoTest_NoSemicolon.py
 
       - name: Commit and Push The Results From Python Selenium Action
         run: |
@@ -74,5 +86,5 @@ jobs:
           git commit -m "update"
           git push
 
-      - name: Read cookies
-        run: python readCookieImage.py
+      # - name: Read cookies
+      #   run: python readCookieImage.py
