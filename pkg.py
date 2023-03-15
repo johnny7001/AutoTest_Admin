@@ -79,7 +79,7 @@ def getCaptcha(filepath):
         # PATH = now_path + r"\Tesseract-OCR\tesseract.exe"
 
         # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-        pytesseract.pytesseract.tesseract_cmd = "/home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe"
+        pytesseract.pytesseract.tesseract_cmd = "Tesseract-OCR/tesseract.exe"
         img = Image.open(filepath)
         # img.show()
         imgResult = pytesseract.image_to_string(
