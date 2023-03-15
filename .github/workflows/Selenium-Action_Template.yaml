@@ -80,8 +80,8 @@ jobs:
 #          git config core.filemode false
 #          git update-index --chmod=-x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
 
-#          git add -A
 #          git commit -m "Tesseract-OCR update 0315"
+#          git add -A
 #          git push
 
       - name: Running autoTest script
