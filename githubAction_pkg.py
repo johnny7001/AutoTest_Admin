@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 from email.mime.text import MIMEText
 import smtplib
 from datetime import datetime, timezone, timedelta
