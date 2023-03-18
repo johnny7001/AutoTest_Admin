@@ -73,14 +73,9 @@ def open_driver():
 
 def getCaptcha(filepath):
     try:
-        # print(os.listdir("/usr/share/tesseract-ocr"))
-        # print('開啟圖檔準備辨識： ')
-        now_path = os.getcwd()  # 查看現在在哪一個路徑
-        print(now_path)
-        # PATH = now_path + r"\Tesseract-OCR\tesseract.exe"
-
+        # now_path = os.getcwd()  # 查看現在在哪一個路徑
+        # print(now_path)
         # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-        # pytesseract.pytesseract.tesseract_cmd = "/home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe"
         img = Image.open(filepath)
         # img.show()
         imgResult = pytesseract.image_to_string(
@@ -88,7 +83,7 @@ def getCaptcha(filepath):
         print('辨識碼結果：', imgResult, type(imgResult))
         return imgResult
     except Exception as err:
-        print(os.listdir("/usr/share/tesseract-ocr"))
+        # print(os.listdir("/usr/share/tesseract-ocr"))
         print(f"識別失敗, 錯誤訊息: {err}")
         return logging.info(f"識別失敗, 錯誤訊息: {err}")
 
@@ -129,15 +124,9 @@ def catchBase64(driver):
             callback = arguments[arguments.length - 1];
             callback(canvas.toDataURL());
             """)
-        print(f'產生Base64: {captchaBase64}')
         return captchaBase64
     except Exception as err:
         logging.info(f'catchBase64失敗, 錯誤訊息: {err}')
-
-
-# Account = "Stage2000214"
-# Password = "test1234"
-# AuthNO = "53538851"
 
 # 後台登入
 
@@ -170,8 +159,8 @@ def AdminLogin(driver):
         downloadImg(captchaBase64, filename)
         time.sleep(1)
         imgOpen = Image.open(filename)
-        print(imgOpen.size)
-        print(imgOpen.mode)
+        # print(imgOpen.size)
+        # print(imgOpen.mode)
         # 處理圖片, 取得驗證碼
         number = getCaptcha(filename)
         print(f'取得驗證碼: {number}')
