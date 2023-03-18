@@ -28,9 +28,8 @@ jobs:
 
       - name: Install tesseract and chmod permission denied
         run: |
-          run: |
-          ./tesseractUbuntu.sh
           sudo chmod a+x ./tesseractUbuntu.sh
+          ./tesseractUbuntu.sh
           # git config core.filemode false
           # git update-index --chmod=-x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
           # git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
