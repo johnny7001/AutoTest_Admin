@@ -73,14 +73,14 @@ def open_driver():
 
 def getCaptcha(filepath):
     try:
-        print(os.listdir("/usr/share/tesseract-ocr"))
-        print('開啟圖檔準備辨識： ')
+        # print(os.listdir("/usr/share/tesseract-ocr"))
+        # print('開啟圖檔準備辨識： ')
         now_path = os.getcwd()  # 查看現在在哪一個路徑
         print(now_path)
         # PATH = now_path + r"\Tesseract-OCR\tesseract.exe"
 
         # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-        pytesseract.pytesseract.tesseract_cmd = "/home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe"
+        # pytesseract.pytesseract.tesseract_cmd = "/home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe"
         img = Image.open(filepath)
         # img.show()
         imgResult = pytesseract.image_to_string(
