@@ -2,7 +2,9 @@
 sudo apt update
 sudo add-apt-repository ppa:alex-p/tesseract-ocr-devel
 sudo apt install -y tesseract-ocr
-tesseract --version
+whereis tesseract-ocr
+# tesseract --version
+
 # echo hi
 # sudo apt-get install g++
 # sudo apt-get install autoconf automake libtool
