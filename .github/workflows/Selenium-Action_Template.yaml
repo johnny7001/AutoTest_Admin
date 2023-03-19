@@ -2,6 +2,9 @@
 name: Run Selenium On GitHub Action
 on:
   workflow_dispatch:
+  schedule:
+  - cron: '30 14 * * 1-5'
+  - timezone: 'Asia/Taipei'
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -30,25 +33,18 @@ jobs:
         run: |
           sudo chmod a+x ./tesseractUbuntu.sh
           ./tesseractUbuntu.sh
-          # git config core.filemode false
-          # git update-index --chmod=-x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
-          # git update-index --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
-          # git config --global user.name "johnny7001"
-          # git config --global user.email "theforeverwen@gmail.com"
-          # git add -A
-          # git commit -m "update"
-          # git push
-      - name: Running autoTest script
+      - name: Running autoTest_NoSemicolon script
         run:
           python autoTest_NoSemicolon.py
-
+        
+      - name: Running autoTest_Semicolon script
+        run:
+          python autoTest_Semicolon.py
+          
       - name: Commit and Push The Results From Python Selenium Action
         run: |
           git config --global user.name "johnny7001"
           git config --global user.email "theforeverwen@gmail.com"
           git add -A
-          git commit -m "update"
+          git commit -m "update log file"
           git push
-
-      # - name: Read cookies
-      #   run: python readCookieImage.py
