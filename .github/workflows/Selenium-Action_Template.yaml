@@ -2,9 +2,9 @@
 name: Run Selenium On GitHub Action
 on:
   workflow_dispatch:
-  schedule:
-  - cron: '30 14 * * 1-5'
-  - timezone: 'Asia/Taipei'
+  # schedule:
+  # - cron: '30 14 * * 1-5'
+  # - timezone: 'Asia/Taipei'
 jobs:
   scrape:
     runs-on: ubuntu-latest
