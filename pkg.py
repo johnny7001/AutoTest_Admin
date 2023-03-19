@@ -13,6 +13,8 @@ from matplotlib import pyplot as plt
 import matplotlib.image as mpimg
 import time
 from bs4 import BeautifulSoup
+from email.mime.text import MIMEText
+import smtplib
 # from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -231,6 +233,32 @@ def sendEmail():
     server.send_message(msg)
     server.quit()
 
+# 寄信功能
+
+
+def sendEmail(mailTitle, mailContent):
+    # SMTP
+    account = "theforeverwen@gmail.com"
+    password = "wbteeozfhkugqlqq"
+
+    # 收信寄信人的資料
+    to_email = "johnnytseng7001@gmail.com"
+    from_email = "theforeverwen@gmail.com"
+
+    # MIME
+    subject = mailTitle  # 標題
+    message = mailContent  # 內容
+    msg = MIMEText(message, "html")
+    msg["Subject"] = subject
+    msg["To"] = to_email
+    msg["From"] = from_email
+
+    # 寄信
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    server.login(account, password)
+    server.send_message(msg)
+    server.quit()
 # # 下載圖片
 # def downloadImg(imgUrl):
 #     try:
