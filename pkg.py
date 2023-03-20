@@ -23,10 +23,10 @@ import chromedriver_autoinstaller
 from pyvirtualdisplay import Display
 display = Display(visible=0, size=(1600, 900))
 display.start()
-# load_dotenv()
-# Account = os.getenv("Account")
-# Password = os.getenv("Password")
-# AuthNO = os.getenv("AuthNO")
+load_dotenv()
+Account = os.getenv("Account")
+Password = os.getenv("Password")
+AuthNO = os.getenv("AuthNO")
 
 # from apscheduler.schedulers.blocking import BlockingScheduler
 
@@ -142,7 +142,7 @@ def AdminLogin(driver):
     driver.find_element(By.XPATH, '//*[@id="ecpayLogin"]').click()
     # 輸入帳號
     driver.find_element(
-        By.XPATH, '//*[@id="Account"]').send_keys("Stage2000214")
+        By.XPATH, '//*[@id="Account"]').send_keys(Account)
 
     # 判斷是否有彈跳視窗, 若有彈跳視窗表示登入失敗
     while True:
@@ -151,10 +151,10 @@ def AdminLogin(driver):
         driver.implicitly_wait(10)
         # 輸入密碼
         driver.find_element(
-            By.XPATH, '//*[@id="Password"]').send_keys("test1234")
+            By.XPATH, '//*[@id="Password"]').send_keys(Password)
         # 輸入統一編號
         driver.find_element(
-            By.XPATH, '//*[@id="AuthNO"]').send_keys("53538851")
+            By.XPATH, '//*[@id="AuthNO"]').send_keys(AuthNO)
         filename = "captcha.png"
 
         captchaBase64 = catchBase64(driver)
