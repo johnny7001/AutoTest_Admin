@@ -1,4 +1,3 @@
-#!/bin/bash
 from email.mime.text import MIMEText
 import smtplib
 from datetime import datetime, timezone, timedelta
@@ -14,7 +13,9 @@ from matplotlib import pyplot as plt
 import matplotlib.image as mpimg
 import time
 from bs4 import BeautifulSoup
-# from dotenv import load_dotenv
+from email.mime.text import MIMEText
+import smtplib
+from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -22,10 +23,10 @@ import chromedriver_autoinstaller
 from pyvirtualdisplay import Display
 display = Display(visible=0, size=(1600, 900))
 display.start()
-# load_dotenv()
-# Account = os.getenv("Account")
-# Password = os.getenv("Password")
-# AuthNO = os.getenv("AuthNO")
+load_dotenv()
+Account = os.getenv("Account")
+Password = os.getenv("Password")
+AuthNO = os.getenv("AuthNO")
 
 # from apscheduler.schedulers.blocking import BlockingScheduler
 
@@ -74,13 +75,9 @@ def open_driver():
 
 def getCaptcha(filepath):
     try:
-        print('開啟圖檔準備辨識： ')
-        now_path = os.getcwd()  # 查看現在在哪一個路徑
-        print(now_path)
-        # PATH = now_path + r"\Tesseract-OCR\tesseract.exe"
-
+        # now_path = os.getcwd()  # 查看現在在哪一個路徑
+        # print(now_path)
         # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-        pytesseract.pytesseract.tesseract_cmd = "/home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe"
         img = Image.open(filepath)
         # img.show()
         imgResult = pytesseract.image_to_string(
@@ -88,6 +85,7 @@ def getCaptcha(filepath):
         print('辨識碼結果：', imgResult, type(imgResult))
         return imgResult
     except Exception as err:
+        # print(os.listdir("/usr/share/tesseract-ocr"))
         print(f"識別失敗, 錯誤訊息: {err}")
         return logging.info(f"識別失敗, 錯誤訊息: {err}")
 
@@ -127,15 +125,9 @@ def catchBase64(driver):
             callback = arguments[arguments.length - 1];
             callback(canvas.toDataURL());
             """)
-        print(f'產生Base64: {captchaBase64}')
         return captchaBase64
     except Exception as err:
         logging.info(f'catchBase64失敗, 錯誤訊息: {err}')
-
-
-# Account = "Stage2000214"
-# Password = "test1234"
-# AuthNO = "53538851"
 
 # 後台登入
 
@@ -149,7 +141,7 @@ def AdminLogin(driver):
     driver.find_element(By.XPATH, '//*[@id="ecpayLogin"]').click()
     # 輸入帳號
     driver.find_element(
-        By.XPATH, '//*[@id="Account"]').send_keys("Stage2000214")
+        By.XPATH, '//*[@id="Account"]').send_keys(Account)
 
     # 判斷是否有彈跳視窗, 若有彈跳視窗表示登入失敗
     while True:
@@ -158,18 +150,18 @@ def AdminLogin(driver):
         driver.implicitly_wait(10)
         # 輸入密碼
         driver.find_element(
-            By.XPATH, '//*[@id="Password"]').send_keys("test1234")
+            By.XPATH, '//*[@id="Password"]').send_keys(Password)
         # 輸入統一編號
         driver.find_element(
-            By.XPATH, '//*[@id="AuthNO"]').send_keys("53538851")
+            By.XPATH, '//*[@id="AuthNO"]').send_keys(AuthNO)
         filename = "captcha.png"
 
         captchaBase64 = catchBase64(driver)
         downloadImg(captchaBase64, filename)
         time.sleep(1)
         imgOpen = Image.open(filename)
-        print(imgOpen.size)
-        print(imgOpen.mode)
+        # print(imgOpen.size)
+        # print(imgOpen.mode)
         # 處理圖片, 取得驗證碼
         number = getCaptcha(filename)
         print(f'取得驗證碼: {number}')
@@ -239,3 +231,37 @@ def sendEmail():
     server.login(account, password)
     server.send_message(msg)
     server.quit()
+
+# 寄信功能
+
+
+def sendEmail(mailTitle, mailContent):
+    # SMTP
+    account = "theforeverwen@gmail.com"
+    password = "wbteeozfhkugqlqq"
+
+    # 收信寄信人的資料
+    to_email = "johnnytseng7001@gmail.com"
+    from_email = "theforeverwen@gmail.com"
+
+    # MIME
+    subject = mailTitle  # 標題
+    message = mailContent  # 內容
+    msg = MIMEText(message, "html")
+    msg["Subject"] = subject
+    msg["To"] = to_email
+    msg["From"] = from_email
+
+    # 寄信
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    server.login(account, password)
+    server.send_message(msg)
+    server.quit()
+
+# if __name__=='__main__':
+#     main()
+    # scheduler = BlockingScheduler(timezone="Asia/Taipei")
+    # # 設定每週一到日上午9:30分自動爬取並更新資料庫
+    # scheduler.add_job(main, 'cron', day_of_week='0-6', hour=14, minute=00)
+    # scheduler.start()
