@@ -2,6 +2,9 @@
 name: Run Selenium On GitHub Action
 on:
   workflow_dispatch:
+  schedule:
+  - cron: '30 17,22 * * *'
+  # - timezone: 'Asia/Taipei'
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -17,6 +20,7 @@ jobs:
       - name: Removing previous chrome instances on runner
         run: sudo apt purge google-chrome-stable
 
+
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
         run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay
@@ -25,47 +29,22 @@ jobs:
       - name: Install env
         run: pip install -r requirements.txt
 
-      - name: core filemode
+      - name: Install tesseract and chmod permission denied
         run: |
-          git config --global core.filemode false
-          git update-index --chmod=-x Tesseract-OCR/tesseract.exe
-          git update-index --chmod=+x Tesseract-OCR/tesseract.exe
+          sudo chmod a+x ./tesseractUbuntu.sh
+          ./tesseractUbuntu.sh
+      - name: Running autoTest_NoSemicolon script
+        run:
+          python autoTest_NoSemicolon.py
 
-      - name: run chmod tesseract
+      - name: Running autoTest_Semicolon script
+        run:
+          python autoTest_Semicolon.py
+
+      - name: Commit and Push The Results From Python Selenium Action
         run: |
           git config --global user.name "johnny7001"
           git config --global user.email "theforeverwen@gmail.com"
           git add -A
-          git commit -m "Tesseract-OCR update 0315"
+          git commit -m "update log file"
           git push
-#          git update-index --chmod=-x Tesseract-OCR/tesseract.exe
-#          git update-index --chmod=+x Tesseract-OCR/tesseract.exe
-#          git config core.filemode false
-#          git add -A
-#                      sudo chmod +x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
-#                    chmod -x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
-#                    git update-index --skip-worktree --chmod=+x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
-#          git config --global user.name "johnny7001"
-#          git config --global user.email "theforeverwen@gmail.com"
-#          git config core.filemode false
-#          git update-index --chmod=-x /home/runner/work/AutoTest_Admin/AutoTest_Admin/Tesseract-OCR/tesseract.exe
-#          sudo chmod -x Tesseract-OCR/tesseract.exe
-#          git commit -m "Tesseract-OCR update 0315"
-#          git add -A
-#          git push
-
-      - name: Running autoTest script
-        run:
-#          python readImage.py
-          python autoTest_NoSemicolon.py
-
-#      - name: Commit and Push The Results From Python Selenium Action
-#        run: |
-#          git config --global user.name "johnny7001"
-#          git config --global user.email "theforeverwen@gmail.com"
-#          git add -A
-#          git commit -m "update"
-#          git push
-
-      # - name: Read cookies
-      #   run: python readCookieImage.py

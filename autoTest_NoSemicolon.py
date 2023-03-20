@@ -1,9 +1,8 @@
-#!/bin/sh
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 import logging
 import time
-from pkg import AdminLogin,open_driver,cookieLogin
+from pkg import AdminLogin, open_driver, cookieLogin, sendEmail
 
 FORMAT = '%(asctime)s %(levelname)s: %(message)s'
 logging.basicConfig(level=logging.INFO, filename=f'autoTest_NoSemicolon.txt', filemode='a+', format=FORMAT,
@@ -18,7 +17,7 @@ driver.implicitly_wait(30)
 soup = cookieLogin(driver)
 
 # 顯示修改之前的電子信箱
-while soup.find('input',id='ContactEmail') is None:
+while soup.find('input', id='ContactEmail') is None:
     print('沒抓到聯絡人信箱, 重新登入')
     driver = AdminLogin(driver)
     driver.implicitly_wait(30)
@@ -59,7 +58,7 @@ except Exception as err:
 driver.refresh()
 time.sleep(1)
 soup = BeautifulSoup(driver.page_source, 'html.parser')
-while soup.find('input',id='ContactEmail') is None:
+while soup.find('input', id='ContactEmail') is None:
     print('沒抓到聯絡人信箱, 重新整理頁面')
     # 重新登入
     driver = AdminLogin(driver)
@@ -80,3 +79,5 @@ else:
     mailContent += '信箱內容已被修改,請檢查是否異常-Fail\n'
 logging.info("="*150)
 driver.close()
+# 寄信通知結果
+sendEmail(mailTitle='autoTest_NoSemicolon', mailContent=mailContent)
