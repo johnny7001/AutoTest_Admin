@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 from email.mime.text import MIMEText
 import smtplib
 from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -207,20 +208,20 @@ def cookieLogin(driver):
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     return soup
 
-
-def sendEmail():
+# 寄信功能
+def sendEmail(mailTitle, mailContent):
     # SMTP
     account = "theforeverwen@gmail.com"
-    password = "tcgfcyvjqvebwtcz"
+    password = "wbteeozfhkugqlqq"
 
     # 收信寄信人的資料
-    to_email = "johnny.tseng@ecpay.com.tw"
+    to_email = "johnnytseng7001@gmail.com"
     from_email = "theforeverwen@gmail.com"
 
     # MIME
-    subject = "測試信件"
-    send_message = "哈囉可以了嗎"
-    msg = MIMEText(send_message, "html")
+    subject = mailTitle  # 標題
+    message = mailContent  # 內容
+    msg = MIMEText(message, "html")
     msg["Subject"] = subject
     msg["To"] = to_email
     msg["From"] = from_email
@@ -231,9 +232,17 @@ def sendEmail():
     server.login(account, password)
     server.send_message(msg)
     server.quit()
-
-# 寄信功能
-
+# # 下載圖片
+# def downloadImg(imgUrl):
+#     try:
+#
+#         # 下載圖片
+#         img = requests.get(url=imgUrl, stream=True, verify=False)
+#         with open(r"CAPTCHA.jfif", "wb") as file:
+#             file.write(img.content)
+#         return message("圖片下載成功")
+#     except:
+#         return message("圖片下載失敗")
 
 def sendEmail(mailTitle, mailContent):
     # SMTP

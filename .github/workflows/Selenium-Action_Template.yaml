@@ -36,11 +36,11 @@ jobs:
       - name: Running autoTest_NoSemicolon script
         run:
           python autoTest_NoSemicolon.py
-
+        
       - name: Running autoTest_Semicolon script
         run:
           python autoTest_Semicolon.py
-
+          
       - name: Commit and Push The Results From Python Selenium Action
         run: |
           git config --global user.name "johnny7001"

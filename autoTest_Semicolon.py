@@ -86,3 +86,4 @@ logging.info("="*150)
 driver.close()
 # 寄信通知
 sendEmail(mailTitle='autoTest_Semicolon', mailContent=mailContent)
+
