@@ -3709,3 +3709,31 @@ Stacktrace:
 2024-01-15 22:34:10,512 INFO: 檢查信箱內容是否有被更修改:1704926070@ecpay.com.tw;helloJapan@gmail.com
 2024-01-15 22:34:10,512 INFO: 信箱內容未被修改,請檢查是否異常-Fail
 2024-01-15 22:34:10,512 INFO: ======================================================================================================================================================
+2024-01-16 17:34:40,110 WARNING: Can not find chromedriver for currently installed chrome version.
+2024-01-16 17:34:59,932 INFO: 修改之前的電子信箱:1704926070@ecpay.com.tw;helloJapan@gmail.com
+2024-01-16 17:35:00,099 INFO: 輸入的電子信箱:1705426499@ecpay.com.tw;helloJapan@gmail.com
+2024-01-16 17:35:02,165 INFO: 未出現彈跳視窗訊息: Message: no such alert
+  (Session info: chrome=120.0.6099.0)
+Stacktrace:
+#0 0x562625802f83 <unknown>
+#1 0x5626254bbb2b <unknown>
+#2 0x5626254ab54a <unknown>
+#3 0x5626254e0d2b <unknown>
+#4 0x56262553510b <unknown>
+#5 0x5626254e0bcb <unknown>
+#6 0x562625534e53 <unknown>
+#7 0x5626254fcdd4 <unknown>
+#8 0x5626254fe1de <unknown>
+#9 0x5626257c7531 <unknown>
+#10 0x5626257cb455 <unknown>
+#11 0x5626257b3f55 <unknown>
+#12 0x5626257cc0ef <unknown>
+#13 0x56262579799f <unknown>
+#14 0x5626257f0008 <unknown>
+#15 0x5626257f01d7 <unknown>
+#16 0x562625802124 <unknown>
+#17 0x7f537f094ac3 <unknown>
+
+2024-01-16 17:35:09,299 INFO: 檢查信箱內容是否有被更修改:1704926070@ecpay.com.tw;helloJapan@gmail.com
+2024-01-16 17:35:09,299 INFO: 信箱內容未被修改,請檢查是否異常-Fail
+2024-01-16 17:35:09,299 INFO: ======================================================================================================================================================
